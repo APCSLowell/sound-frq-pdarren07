@@ -40,13 +40,13 @@ public class Sound
   {
     /* to be implemented in part (b) */
     int i = 0;
-    while(this.samples[i] == 0){
+    while(samples[i] == 0){
       i++;
     }
-    int [] newSample = new int[this.samples.length-1];
+    int [] newSample = new int[samples.length-i];
     for(int j = 0; j < newSample.length; j++){
-      newSample[j]=this.samples[i+j];
+      newSample[j]=samples[i+j];
     }
-      this.samples=newSample;
+      samples=newSample;
   }
 }
