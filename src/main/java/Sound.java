@@ -17,13 +17,13 @@ public class Sound
   {  
     /* to be implemented in part (a) */
     int change = 0;
-    for(int i = 0; i < this.samples.length; i++){
-      if(this.samples[i] < -limit){
-          this.samples[i] = -limit;
+    for(int i = 0; i < samples.length; i++){
+      if(samples[i] < -limit){
+          samples[i] = -limit;
           change++;
       }
-      if(this.samples[i] > limit){
-          this.samples[i] = limit;
+      if(samples[i] > limit){
+          samples[i] = limit;
           change++;
       }
     }
