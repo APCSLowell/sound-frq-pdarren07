@@ -17,7 +17,7 @@ public class Sound
   {  
     /* to be implemented in part (a) */
     int change = 0;
-    for(int i = 0; i < this.samples.length; i++){
+    for(int i = 0; i < this.samples.length(); i++){
       if(this.samples[i] < -limit){
           this.samples[i] = -limit;
           change++;
@@ -45,8 +45,8 @@ public class Sound
     while(this.samples[i] == 0){
       i++;
     }
-    int [] newSample = new int[this.samples.length-1];
-    for(int j = 0; j < newSample.length-1; j++){
+    int [] newSample = new int[this.samples.length()-1];
+    for(int j = 0; j < newSample.length()-1; j++){
       newSample[j]=this.samples[i+j];
     }
       this.samples=newSample;
