@@ -40,7 +40,7 @@ public class Sound
   {
     /* to be implemented in part (b) */
     int i = 0;
-    while(samples[i] == 0){
+    while(i < samples.length && samples[i] == 0){
       i++;
     }
     int [] newSample = new int[samples.length-i];
