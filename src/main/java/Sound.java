@@ -47,8 +47,8 @@ public class Sound
     }
     int [] newSample = new int[this.samples.length-1];
     for(int j = 0; j < newSample.length-1; j++){
-      newSamples[j]=this.samples[i+j];
+      newSample[j]=this.samples[i+j];
     }
-      this.samples=newSamples;
+      this.samples=newSample;
   }
 }
