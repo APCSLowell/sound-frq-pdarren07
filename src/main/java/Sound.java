@@ -30,23 +30,23 @@ public class Sound
   }
 
 
-
   /** Removes all silence from the beginning of this sound.
    *  Silence is represented by a value of 0.
    *  Precondition: samples contains at least one nonzero value
    *  Postcondition: the length of samples reflects the removal of starting silence
    */
   public void trimSilenceFromBeginning()
-  {
-    /* to be implemented in part (b) */
-    int i = 0;
-    while(i < samples.length && samples[i] == 0){
-      i++;
-    }
-    int [] newSample = new int[samples.length-i];
-    for(int j = 0; j < newSample.length; j++){
-      newSample[j]=samples[i+j];
-    }
-      samples=newSample;
-  }
+{
+ /*to be implemented in part (b) */
+ int i = 0; 
+ int count = 0;
+ while ( samples[i]== 0){
+   count ++;
+   i++;}
+ int [] newSample = new int [samples.length- count];
+ for ( int a = 0 ; a < newSample.length; a++){
+   newSample[a] = samples[a+i];
+ }
+ samples = newSample;
+}
 }
