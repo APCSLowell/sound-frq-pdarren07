@@ -3,9 +3,7 @@ public class Sound
 {
   /** the array of values in this sound; guaranteed not to be null */
   int[] samples;
-  public Sound(){
-    
-  }
+
 
   /** Changes those values in this sound that have an amplitude greater than limit.
    *  Values greater than limit are changed to limit.
